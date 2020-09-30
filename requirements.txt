@@ -1,0 +1,9 @@
+easydict
+future
+matplotlib
+numpy
+opencv-python
+scikit-image
+scipy
+torch>=1.2
+torchvision

@@ -37,8 +37,8 @@ Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
     ```
 
 3. Download pretrained models from [Google Drive](https://drive.google.com/drive/folders/1c-KUEPJl7pHs9btqHYoUJkcMPKViObgJ?usp=sharing)
-    - MuCAN\_REDS.pth: trained on REDS dataset
-    - MuCAN\_Vimeo90K: trained on Vimeo90K dataset
+    - MuCAN\_REDS.pth: trained on REDS dataset, requires 5-frame input
+    - MuCAN\_Vimeo90K.pth: trained on Vimeo90K dataset, requires 7-frame input
 
 4. Quick test
     ```shell
