@@ -35,16 +35,17 @@ Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
     - MuCAN\_REDS.pth: trained on REDS dataset
     - MuCAN\_Vimeo90K: trained on Vimeo90K dataset
 
-4. Test
-    python3 test_sample.py --model_path /model/path --input_path /input/path --output_path /output/path
-
+4. Quick test
+    ```shell
+    python3 test_sample.py --model_path /model/path --input_path ./demo/LR_imgs --output_path ./demo/output 
+    ```
 
 ### Bibtex
-    ```shell
+    ```
     @article{li2020mucan,
-          title={MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution},
-            author={Li, Wenbo and Tao, Xin and Guo, Taian and Qi, Lu and Lu, Jiangbo and Jia, Jiaya},
-              journal={arXiv preprint arXiv:2007.11803},
-                year={2020}
+    title={MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution},
+    author={Li, Wenbo and Tao, Xin and Guo, Taian and Qi, Lu and Lu, Jiangbo and Jia, Jiaya},
+    journal={arXiv preprint arXiv:2007.11803},
+    year={2020}
     }
     ```
