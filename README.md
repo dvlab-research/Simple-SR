@@ -25,7 +25,7 @@ Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
     git clone https://github.com/Jia-Research-Lab/Simple-SR.git
     ```
 2. Install the dependencies
-    - Python >= 3.7
+    - Python >= 3.5
     - PyTorch >= 1.2
     - spatial-correlation-sampler
     ```shell
@@ -46,11 +46,9 @@ Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
     ```
 
 ### Bibtex
-    ```
     @article{li2020mucan,
     title={MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution},
     author={Li, Wenbo and Tao, Xin and Guo, Taian and Qi, Lu and Lu, Jiangbo and Jia, Jiaya},
     journal={arXiv preprint arXiv:2007.11803},
     year={2020}
     }
-    ```
