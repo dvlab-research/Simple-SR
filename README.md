@@ -2,16 +2,21 @@
 
 The repository includes MuCAN, LAPAR, etc. The testing code is first released. We will gradually add the training part and more methods.
 
+---
+
 ### MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution (ECCV 2020)
  
 Wenbo Li, Xin Tao, Taian Guo, Lu Qi, Jiangbo Lu, Jiaya Jia
 
 [paper](https://arxiv.org/abs/2007.1180)
 
+---
+
 ### LAPAR: Linearly-Assembled Pixel-Adaptive Regression Network for Single Image Super-resolution and Beyond (NeurIPS 2020)
 
 Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
 
+---
 
 ### Usage
 
