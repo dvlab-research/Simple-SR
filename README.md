@@ -1,6 +1,6 @@
 # Simple-SR
 
-The repository includes MuCAN, LAPAR, etc. The testing code is first released. We will gradually add the training part and more methods.
+The repository includes MuCAN, LAPAR, etc. The testing code is now released. We will gradually add the training part and more methods.
 
 ---
 
