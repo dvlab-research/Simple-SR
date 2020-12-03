@@ -46,7 +46,7 @@ Please find supplementary files of MuCAN and LAPAR in 'materials'.
 
 4. Quick test
     ```shell
-    python3 test_sample.py --sr_type SISR/VSR --model_path /model/path --input_path ./demo/LR_imgs --output_path ./demo/output --gt_path ./demo/gt 
+    python3 test_sample.py --sr_type SISR/VSR --model_path /model/path --input_path ./demo/LR_imgs --output_path ./demo/output --gt_path ./demo/HR_imgs
     ```
 
 ### Bibtex
