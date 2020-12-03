@@ -8,7 +8,7 @@ The repository includes MuCAN, LAPAR, etc. The testing code is now released. We 
  
 Wenbo Li, Xin Tao, Taian Guo, Lu Qi, Jiangbo Lu, Jiaya Jia
 
-[ECCV](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550341.pdf) [arXiv](https://arxiv.org/abs/2007.1180)
+[ECCV](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550341.pdf)   [arXiv](https://arxiv.org/abs/2007.1180)
 
 ---
 
@@ -57,8 +57,8 @@ Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
       organization={Springer}
     }
     @article{li2020mucan,
-    title={MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution},
-    author={Li, Wenbo and Tao, Xin and Guo, Taian and Qi, Lu and Lu, Jiangbo and Jia, Jiaya},
-    journal={arXiv preprint arXiv:2007.11803},
-    year={2020}
+      title={MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution},
+      author={Li, Wenbo and Tao, Xin and Guo, Taian and Qi, Lu and Lu, Jiangbo and Jia, Jiaya},
+      journal={arXiv preprint arXiv:2007.11803},
+      year={2020}
     }
