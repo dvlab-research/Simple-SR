@@ -20,6 +20,8 @@ Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
 
 ---
 
+Please find supplementary files of MuCAN and LAPAR in 'materials'.
+
 ### Usage
 
 1. Clone the repository
