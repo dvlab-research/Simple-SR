@@ -20,7 +20,7 @@ Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
 
 ---
 
-Please find supplementary files of MuCAN and LAPAR in 'materials'.
+Please find supplementary files of MuCAN and LAPAR in [Google Drive](https://drive.google.com/drive/folders/1pSFX6kV81slv2vGkboZjewZwQsLkFesU)
 
 ### Usage
 
