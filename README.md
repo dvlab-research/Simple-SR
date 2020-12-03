@@ -8,13 +8,15 @@ The repository includes MuCAN, LAPAR, etc. The testing code is now released. We 
  
 Wenbo Li, Xin Tao, Taian Guo, Lu Qi, Jiangbo Lu, Jiaya Jia
 
-[paper](https://arxiv.org/abs/2007.1180)
+[ECCV](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550341.pdf) [arXiv](https://arxiv.org/abs/2007.1180)
 
 ---
 
 ### LAPAR: Linearly-Assembled Pixel-Adaptive Regression Network for Single Image Super-resolution and Beyond (NeurIPS 2020)
 
 Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
+
+[NeurIPS](https://papers.nips.cc/paper/2020/file/eaae339c4d89fc102edd9dbdb6a28915-Paper.pdf)
 
 ---
 
@@ -46,6 +48,14 @@ Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
     ```
 
 ### Bibtex
+    @inproceedings{li2020mucan,
+      title={MuCAN: Multi-correspondence Aggregation Network for Video Super-Resolution},
+      author={Li, Wenbo and Tao, Xin and Guo, Taian and Qi, Lu and Lu, Jiangbo and Jia, Jiaya},
+      booktitle={European Conference on Computer Vision},
+      pages={335--351},
+      year={2020},
+      organization={Springer}
+    }
     @article{li2020mucan,
     title={MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution},
     author={Li, Wenbo and Tao, Xin and Guo, Taian and Qi, Lu and Lu, Jiangbo and Jia, Jiaya},
