@@ -44,7 +44,7 @@ Wenbo Li, Kun Zhou, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
 
 4. Quick test
     ```shell
-    python3 test_sample.py --model_path /model/path --input_path ./demo/LR_imgs --output_path ./demo/output 
+    python3 test_sample.py --sr_type SISR/VSR --model_path /model/path --input_path ./demo/LR_imgs --output_path ./demo/output --gt_path ./demo/gt 
     ```
 
 ### Bibtex
