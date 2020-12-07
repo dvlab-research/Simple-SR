@@ -41,8 +41,11 @@ Please find supplementary files of MuCAN and LAPAR in [Google Drive](https://dri
     ```
 
 3. Download pretrained models from [Google Drive](https://drive.google.com/drive/folders/1c-KUEPJl7pHs9btqHYoUJkcMPKViObgJ?usp=sharing)
-    - MuCAN\_REDS.pth: trained on REDS dataset, requires 5-frame input
-    - MuCAN\_Vimeo90K.pth: trained on Vimeo90K dataset, requires 7-frame input
+    - MuCAN\_REDS.pth: trained on REDS dataset, requires 5-frame input, x4 scale
+    - MuCAN\_Vimeo90K.pth: trained on Vimeo90K dataset, requires 7-frame input, x4 scale
+    - LAPAR\_A\_x2.pth: trained on DIV2K+Flickr2K datasets, x2 scale 
+    - LAPAR\_A\_x3.pth: trained on DIV2K+Flickr2K datasets, x3 scale 
+    - LAPAR\_A\_x4.pth: trained on DIV2K+Flickr2K datasets, x4 scale 
 
 4. Quick test
     ```shell
