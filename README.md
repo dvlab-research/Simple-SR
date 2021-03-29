@@ -7,7 +7,7 @@ The repository includes MuCAN, LAPAR, etc. The testing code is now released. We 
 
 Wenbo Li\*, Kun Zhou\*, Lu Qi, Liying Lu, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
 
-[High quality version](https://drive.google.com/file/d/14vt57mSERR8cx62e7aNCkuxlKOCUP53H/view?usp=sharing)
+[\[High quality version\]](https://drive.google.com/file/d/14vt57mSERR8cx62e7aNCkuxlKOCUP53H/view?usp=sharing)
 
 ---
 
@@ -15,7 +15,7 @@ Wenbo Li\*, Kun Zhou\*, Lu Qi, Liying Lu, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
  
 Wenbo Li, Xin Tao, Taian Guo, Lu Qi, Jiangbo Lu, Jiaya Jia
 
-[ECCV](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550341.pdf)   [arXiv](https://arxiv.org/abs/2007.1180)
+[\[ECCV\]](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550341.pdf)   [\[arXiv\]](https://arxiv.org/abs/2007.1180)
 
 ---
 
@@ -23,7 +23,7 @@ Wenbo Li, Xin Tao, Taian Guo, Lu Qi, Jiangbo Lu, Jiaya Jia
 
 Wenbo Li\*, Kun Zhou\*, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
 
-[NeurIPS](https://papers.nips.cc/paper/2020/file/eaae339c4d89fc102edd9dbdb6a28915-Paper.pdf)
+[\[NeurIPS\]](https://papers.nips.cc/paper/2020/file/eaae339c4d89fc102edd9dbdb6a28915-Paper.pdf)
 
 ---
 
