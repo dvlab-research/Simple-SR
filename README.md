@@ -1,9 +1,9 @@
 # Simple-SR
-The repository includes MuCAN, LAPAR, Beby-GAN and etc. 
+The repository includes MuCAN, LAPAR, Beby-GAN and etc. It is designed for simple training and evaluation.
 
 ---
 ### Update
-The training code of LAPARis now released. We will gradually add MuCAN and Beby-GAN and more methods.
+The training code of LAPAR (9 models) is now released. We will gradually add MuCAN and Beby-GAN and more methods.
 
 ---
 ### Paper 
@@ -49,6 +49,38 @@ Please find supplementary files of MuCAN and LAPAR in [Google Drive](https://dri
     ```shell
     python3 test_sample.py --sr_type SISR/VSR --model_path /model/path --input_path ./demo/LR_imgs --output_path ./demo/output --gt_path ./demo/HR_imgs
     ```
+
+#### Data Preparation
+1. Training Datasets
+Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar). You can crop the HR and LR images to sub-images for fast reading referring to .utils/data\_prep/extract\_subimage.py. 
+
+2. Evaluation Datasets
+Download Set5, Set14, Urban100, BSDS100 and Manga109 from [Google Drive](https://drive.google.com/drive/folders/1B3DJGQKB6eNdwuQIhdskA64qUuVKLZ9u) uplaoded by BasicSR.
+
+3. Update the dataset folder information in .dataset/\_\_init\_\_.py. 
+
+4. (Optional) You can convert the images to lmdb for fast loading referring to [BasicSR](https://github.com/xinntao/BasicSR/blob/master/docs/DatasetPreparation.md#LMDB-Description). And you need to modify the data reading logics in folder .dataset/\*dataset.py accordingly.
+
+#### Train
+1. Create a log folder as
+```shell
+mkdir logs
+```
+
+2. For a new experiment, create a folder in .exps/. You just need to prepare the config.py and network.py, while the train.py and validate.py are common. For example, for LAPAR\_A\_x2, run
+```shell
+cd exps/LAPAR_A_x2/
+bash train.sh $GPU_NUM $PORT
+```
+Notice that you can find the checkpoints, log files and visualization images in either .exps/LAPAR\_A\_x2/log/ (a soft link) or .logs/LAPAR\_A\_x2/.
+
+#### Test
+Please refer to validate.py in each experiment or quick test above.
+
+---
+### Acknowledgement
+We refer to [BasicSR](https://github.com/xinntao/BasicSR) for some details.
+
 ---
 ### Bibtex
     @inproceedings{li2020mucan,
