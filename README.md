@@ -1,34 +1,25 @@
 # Simple-SR
-
-The repository includes MuCAN, LAPAR, etc. The testing code is now released. We will gradually add the training part and more methods.
+The repository includes MuCAN, LAPAR, Beby-GAN and etc. 
 
 ---
-### Best-Buddy GANs for Highly Detailed Image Super-Resolution
+### Update
+The training code of LAPARis now released. We will gradually add MuCAN and Beby-GAN and more methods.
 
-Wenbo Li\*, Kun Zhou\*, Lu Qi, Liying Lu, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
+---
+### Paper 
 
+#### Best-Buddy GANs for Highly Detailed Image Super-Resolution
 [\[High quality version\]](https://drive.google.com/file/d/14vt57mSERR8cx62e7aNCkuxlKOCUP53H/view?usp=sharing)
 
----
-
-### MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution (ECCV 2020)
- 
-Wenbo Li, Xin Tao, Taian Guo, Lu Qi, Jiangbo Lu, Jiaya Jia
-
+#### MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution (ECCV 2020)
 [\[ECCV\]](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550341.pdf)   [\[arXiv\]](https://arxiv.org/abs/2007.1180)
 
----
-
-### LAPAR: Linearly-Assembled Pixel-Adaptive Regression Network for Single Image Super-resolution and Beyond (NeurIPS 2020)
-
-Wenbo Li\*, Kun Zhou\*, Lu Qi, Nianjuan Jiang, Jiangbo Lu, Jiaya Jia
-
+#### LAPAR: Linearly-Assembled Pixel-Adaptive Regression Network for Single Image Super-resolution and Beyond (NeurIPS 2020)
 [\[NeurIPS\]](https://papers.nips.cc/paper/2020/file/eaae339c4d89fc102edd9dbdb6a28915-Paper.pdf)
-
----
 
 Please find supplementary files of MuCAN and LAPAR in [Google Drive](https://drive.google.com/drive/folders/1pSFX6kV81slv2vGkboZjewZwQsLkFesU)
 
+---
 ### Usage
 
 1. Clone the repository
@@ -58,7 +49,7 @@ Please find supplementary files of MuCAN and LAPAR in [Google Drive](https://dri
     ```shell
     python3 test_sample.py --sr_type SISR/VSR --model_path /model/path --input_path ./demo/LR_imgs --output_path ./demo/output --gt_path ./demo/HR_imgs
     ```
-
+---
 ### Bibtex
     @inproceedings{li2020mucan,
       title={MuCAN: Multi-correspondence Aggregation Network for Video Super-Resolution},
@@ -73,4 +64,10 @@ Please find supplementary files of MuCAN and LAPAR in [Google Drive](https://dri
       author={Li, Wenbo and Tao, Xin and Guo, Taian and Qi, Lu and Lu, Jiangbo and Jia, Jiaya},
       journal={arXiv preprint arXiv:2007.11803},
       year={2020}
+    }
+    @article{li2021best,
+      title={Best-Buddy GANs for Highly Detailed Image Super-Resolution},
+      author={Li, Wenbo and Zhou, Kun and Qi, Lu and Lu, Liying and Jiang, Nianjuan and Lu, Jiangbo and Jia, Jiaya},
+      journal={arXiv preprint arXiv:2103.15295},
+      year={2021}
     }
