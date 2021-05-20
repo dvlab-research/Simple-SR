@@ -26,8 +26,8 @@ class Config:
     MODEL.KERNEL_SIZE = 5
     MODEL.KERNEL_PATH = '../../kernel/kernel_72_k5.pkl'
     MODEL.IN_CHANNEL = 3
-    MODEL.N_CHANNEL = 32
-    MODEL.RES_BLOCK = 4
+    MODEL.N_CHANNEL = 16
+    MODEL.RES_BLOCK = 2
     MODEL.N_WEIGHT = 72
     MODEL.DOWN = 1
     MODEL.DEVICE = 'cuda'

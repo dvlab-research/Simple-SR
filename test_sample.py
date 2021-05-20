@@ -26,27 +26,49 @@ def get_network(model_path):
     elif 'LAPAR_A_x4' in model_path:
         from exps.LAPAR_A_x4.config import config
         from exps.LAPAR_A_x4.network import Network
+    elif 'LAPAR_B_x2' in model_path:
+        from exps.LAPAR_B_x2.config import config
+        from exps.LAPAR_B_x2.network import Network
+    elif 'LAPAR_B_x3' in model_path:
+        from exps.LAPAR_B_x3.config import config
+        from exps.LAPAR_B_x3.network import Network
+    elif 'LAPAR_B_x4' in model_path:
+        from exps.LAPAR_B_x4.config import config
+        from exps.LAPAR_B_x4.network import Network
+    elif 'LAPAR_C_x2' in model_path:
+        from exps.LAPAR_C_x2.config import config
+        from exps.LAPAR_C_x2.network import Network
+    elif 'LAPAR_C_x3' in model_path:
+        from exps.LAPAR_C_x3.config import config
+        from exps.LAPAR_C_x3.network import Network
+    elif 'LAPAR_C_x4' in model_path:
+        from exps.LAPAR_C_x4.config import config
+        from exps.LAPAR_C_x4.network import Network
     else:
         print('Illenal model: not implemented!')
         sys.exit(1)
+
+    # an ugly operation
+    if 'KERNEL_PATH' in config.MODEL:
+        config.MODEL.KERNEL_PATH = config.MODEL.KERNEL_PATH.replace('../', '')
 
     return config, Network(config)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--sr_type', type=str, default=None)
+    parser.add_argument('--sr_type', type=str, default='SISR')
     parser.add_argument('--model_path', type=str, default=None)
     parser.add_argument('--input_path', type=str, default=None)
     parser.add_argument('--output_path', type=str, default=None)
     parser.add_argument('--gt_path', type=str, default=None)
     args = parser.parse_args()
-    
+
     if args.output_path and not os.path.exists(args.output_path):
         os.makedirs(args.output_path)
 
     print('Loading Network ...')
-    config, model = get_network(args.model_path) 
+    config, model = get_network(args.model_path)
     device = torch.device('cuda')
     model = model.to(device)
     load_model(model, args.model_path, strict=True)
@@ -99,7 +121,7 @@ if __name__ == '__main__':
                 if args.output_path:
                     output_path = os.path.join(args.output_path, img_name)
                     cv2.imwrite(output_path, output)
-                
+
                 if args.gt_path:
                     output = output.astype(np.float32) / 255.0
                     gt = cv2.imread(gpath_l[i], cv2.IMREAD_COLOR).astype(np.float32) / 255.0
@@ -116,7 +138,7 @@ if __name__ == '__main__':
 
                     psnr_l.append(psnr)
                     ssim_l.append(ssim)
-        
+
     elif args.sr_type == 'VSR':
         num_img = len(ipath_l)
 
@@ -187,7 +209,7 @@ if __name__ == '__main__':
     if args.gt_path:
         avg_psnr = sum(psnr_l) / len(psnr_l)
         avg_ssim = sum(ssim_l) / len(ssim_l)
-        print('--------- Result ---------') 
+        print('--------- Result ---------')
         print('PSNR: %.2f, SSIM:%.4f' % (avg_psnr, avg_ssim))
 
     print('Finished!')

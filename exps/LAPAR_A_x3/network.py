@@ -1,7 +1,4 @@
 import pickle
-import os
-import sys
-sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)) + '/../..')
 
 import torch
 import torch.nn as nn
@@ -34,7 +31,7 @@ class Network(nn.Module):
 
         self.w_conv = WeightNet(config.MODEL)
         self.decom_conv = ComponentDecConv(config.MODEL.KERNEL_PATH, self.k_size)
-        
+
         self.criterion = nn.L1Loss(reduction='mean')
 
 
@@ -58,29 +55,4 @@ class Network(nn.Module):
             return loss_dict
         else:
             return out
-
-
-if __name__ == '__main__':
-    import os
-    import sys
-    sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)) + '../../')
-
-    from config import config
-    net = LinearSISR(config)#.cuda()
-    cnt = 0
-    for p in net.parameters():
-        cnt += p.numel()
-    print(cnt)
-    # input = torch.randn(1, 3, 64, 64)#.cuda()
-    # output = net(input)
-    # print(output.size())
-
-    from thop import profile
-    from thop import clever_format
-
-    h, w = 240, 427
-    ins = torch.FloatTensor(1, 3, h, w)#.cuda()
-    macs, params = profile(net, inputs=(ins,))
-    flops, params = clever_format([macs, params],'%.3f')
-    print('flops, params:', flops, params)
 
