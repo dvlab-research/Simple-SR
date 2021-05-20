@@ -38,7 +38,7 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
     pip install -r requirements.txt
     ```
 
-3. Download pretrained models from [Google Drive](https://drive.google.com/drive/folders/1c-KUEPJl7pHs9btqHYoUJkcMPKViObgJ?usp=sharing). We re-train the LAPAR models and the results are slightly different from the ones reported in paper.
+3. Download pretrained models from [Google Drive](https://drive.google.com/drive/folders/1c-KUEPJl7pHs9btqHYoUJkcMPKViObgJ?usp=sharing). We re-trained the LAPAR models and their results are slightly different from the ones reported in paper.
     - MuCAN
         - MuCAN\_REDS.pth: trained on REDS dataset, 5-frame input, x4 scale
         - MuCAN\_Vimeo90K.pth: trained on Vimeo90K dataset, 7-frame input, x4 scale
@@ -56,12 +56,14 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
 
 #### Data Preparation
 1. Training Datasets
-    Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar). You can crop the HR and LR images to sub-images for fast reading referring to .utils/data\_prep/extract\_subimage.py. 
+
+Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar). You can crop the HR and LR images to sub-images for fast reading referring to .utils/data\_prep/extract\_subimage.py. 
 
 2. Evaluation Datasets
-    Download Set5, Set14, Urban100, BSDS100 and Manga109 from [Google Drive](https://drive.google.com/drive/folders/1B3DJGQKB6eNdwuQIhdskA64qUuVKLZ9u) uplaoded by BasicSR.
 
-3. Update the dataset folder information in .dataset/\_\_init\_\_.py. 
+Download Set5, Set14, Urban100, BSDS100 and Manga109 from [Google Drive](https://drive.google.com/drive/folders/1B3DJGQKB6eNdwuQIhdskA64qUuVKLZ9u) uplaoded by BasicSR.
+
+3. Update the dataset location in .dataset/\_\_init\_\_.py. 
 
 4. (Optional) You can convert images to lmdb files for fast loading referring to [BasicSR](https://github.com/xinntao/BasicSR/blob/master/docs/DatasetPreparation.md#LMDB-Description). And you need to modify the data reading logics in .dataset/\*dataset.py accordingly.
 
@@ -71,7 +73,7 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
     mkdir logs
     ```
 
-2. For a new experiment, create a folder in .exps/. You just need to prepare the config.py and network.py, while the train.py and validate.py are universal. For example, for LAPAR\_A\_x2, run
+2. Create a new experiment folder in .exps/. You just need to prepare the config.py and network.py, while the train.py and validate.py are universal. For example, for LAPAR\_A\_x2, run
     ```shell
     cd exps/LAPAR_A_x2/
     bash train.sh $GPU_NUM $PORT
@@ -79,7 +81,7 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
 Notice that you can find the checkpoints, log files and visualization images in either .exps/LAPAR\_A\_x2/log/ (a soft link) or .logs/LAPAR\_A\_x2/.
 
 #### Test
-Please refer to validate.py in each experiment or quick test above.
+Please refer to validate.py in each experiment folder or quick test above.
 
 ---
 ### Acknowledgement
