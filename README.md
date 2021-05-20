@@ -54,14 +54,14 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
     python3 test_sample.py --sr_type SISR/VSR --model_path /model/path --input_path ./demo/LR_imgs --output_path ./demo/output --gt_path ./demo/HR_imgs
     ```
 
-#### Data Preparation
+#### Prepare Data
 1. Training Datasets
 
-    Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar). You can crop the HR and LR images to sub-images for fast reading referring to .utils/data\_prep/extract\_subimage.py. 
+    Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar). You may crop the HR and LR images to sub-images for fast reading referring to .utils/data\_prep/extract\_subimage.py. 
 
 2. Evaluation Datasets
 
-    Download Set5, Set14, Urban100, BSDS100 and Manga109 from [Google Drive](https://drive.google.com/drive/folders/1B3DJGQKB6eNdwuQIhdskA64qUuVKLZ9u) uplaoded by BasicSR.
+    Download Set5, Set14, Urban100, BSDS100 and Manga109 from [Google Drive](https://drive.google.com/drive/folders/1B3DJGQKB6eNdwuQIhdskA64qUuVKLZ9u) uploaded by BasicSR.
 
 3. Update the dataset location in .dataset/\_\_init\_\_.py. 
 
@@ -78,14 +78,14 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
     cd exps/LAPAR_A_x2/
     bash train.sh $GPU_NUM $PORT
     ```
-Notice that you can find the checkpoints, log files and visualization images in either .exps/LAPAR\_A\_x2/log/ (a soft link) or .logs/LAPAR\_A\_x2/.
+    Notice that you can find the checkpoints, log files and visualization images in either .exps/LAPAR\_A\_x2/log/ (a soft link) or .logs/LAPAR\_A\_x2/.
 
 #### Test
-Please refer to validate.py in each experiment folder or quick test above.
+    Please refer to validate.py in each experiment folder or quick test above.
 
 ---
 ### Acknowledgement
-We refer to [BasicSR](https://github.com/xinntao/BasicSR) for some details.
+    We refer to [BasicSR](https://github.com/xinntao/BasicSR) for some details.
 
 ---
 ### Bibtex
