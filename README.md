@@ -57,11 +57,11 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
 #### Data Preparation
 1. Training Datasets
 
-Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar). You can crop the HR and LR images to sub-images for fast reading referring to .utils/data\_prep/extract\_subimage.py. 
+    Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar). You can crop the HR and LR images to sub-images for fast reading referring to .utils/data\_prep/extract\_subimage.py. 
 
 2. Evaluation Datasets
 
-Download Set5, Set14, Urban100, BSDS100 and Manga109 from [Google Drive](https://drive.google.com/drive/folders/1B3DJGQKB6eNdwuQIhdskA64qUuVKLZ9u) uplaoded by BasicSR.
+    Download Set5, Set14, Urban100, BSDS100 and Manga109 from [Google Drive](https://drive.google.com/drive/folders/1B3DJGQKB6eNdwuQIhdskA64qUuVKLZ9u) uplaoded by BasicSR.
 
 3. Update the dataset location in .dataset/\_\_init\_\_.py. 
 
