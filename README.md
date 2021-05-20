@@ -81,13 +81,11 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
     Notice that you can find the checkpoints, log files and visualization images in either .exps/LAPAR\_A\_x2/log/ (a soft link) or .logs/LAPAR\_A\_x2/.
 
 #### Test
-
-    Please refer to validate.py in each experiment folder or quick test above.
+Please refer to validate.py in each experiment folder or quick test above.
 
 ---
 ### Acknowledgement
-
-    We refer to [BasicSR](https://github.com/xinntao/BasicSR) for some details.
+We refer to [BasicSR](https://github.com/xinntao/BasicSR) for some details.
 
 ---
 ### Bibtex
