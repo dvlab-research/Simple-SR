@@ -3,7 +3,7 @@ The repository includes MuCAN, LAPAR, Beby-GAN and etc. It is designed for simpl
 
 ---
 ### Update
-The training code of LAPAR (9 models) is now released. We will gradually add MuCAN and Beby-GAN and more methods.
+The training code of LAPAR (9 models) is now released.
 
 ---
 ### Paper 
@@ -17,7 +17,7 @@ The training code of LAPAR (9 models) is now released. We will gradually add MuC
 #### LAPAR: Linearly-Assembled Pixel-Adaptive Regression Network for Single Image Super-resolution and Beyond (NeurIPS 2020)
 [\[NeurIPS\]](https://papers.nips.cc/paper/2020/file/eaae339c4d89fc102edd9dbdb6a28915-Paper.pdf)
 
-Please find supplementary files of MuCAN and LAPAR in [Google Drive](https://drive.google.com/drive/folders/1pSFX6kV81slv2vGkboZjewZwQsLkFesU)
+Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.com/drive/folders/1pSFX6kV81slv2vGkboZjewZwQsLkFesU).
 
 ---
 ### Usage
@@ -38,12 +38,16 @@ Please find supplementary files of MuCAN and LAPAR in [Google Drive](https://dri
     pip install -r requirements.txt
     ```
 
-3. Download pretrained models from [Google Drive](https://drive.google.com/drive/folders/1c-KUEPJl7pHs9btqHYoUJkcMPKViObgJ?usp=sharing)
-    - MuCAN\_REDS.pth: trained on REDS dataset, requires 5-frame input, x4 scale
-    - MuCAN\_Vimeo90K.pth: trained on Vimeo90K dataset, requires 7-frame input, x4 scale
-    - LAPAR\_A\_x2.pth: trained on DIV2K+Flickr2K datasets, x2 scale 
-    - LAPAR\_A\_x3.pth: trained on DIV2K+Flickr2K datasets, x3 scale 
-    - LAPAR\_A\_x4.pth: trained on DIV2K+Flickr2K datasets, x4 scale 
+3. Download pretrained models from [Google Drive](https://drive.google.com/drive/folders/1c-KUEPJl7pHs9btqHYoUJkcMPKViObgJ?usp=sharing). We re-train the LAPAR models and the results are slightly different from the ones reported in paper.
+    - MuCAN
+        - MuCAN\_REDS.pth: trained on REDS dataset, 5-frame input, x4 scale
+        - MuCAN\_Vimeo90K.pth: trained on Vimeo90K dataset, 7-frame input, x4 scale
+    - LAPAR: trained on DIV2K+Flickr2K datasets
+        |    Scale x2    |    Scale x3    |    Scale x4    |
+        |     :----:     |     :----:     |     :----:     |
+        | LAPAR_A_x2.pth | LAPAR_A_x3.pth | LAPAR_A_x4.pth |
+        | LAPAR_B_x2.pth | LAPAR_B_x3.pth | LAPAR_B_x4.pth |
+        | LAPAR_C_x2.pth | LAPAR_C_x3.pth | LAPAR_C_x4.pth |
 
 4. Quick test
     ```shell
