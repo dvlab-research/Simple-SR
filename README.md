@@ -97,10 +97,11 @@ We refer to [BasicSR](https://github.com/xinntao/BasicSR) for some details.
       year={2020},
       organization={Springer}
     }
-    @article{li2020mucan,
-      title={MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution},
-      author={Li, Wenbo and Tao, Xin and Guo, Taian and Qi, Lu and Lu, Jiangbo and Jia, Jiaya},
-      journal={arXiv preprint arXiv:2007.11803},
+    @article{li2020lapar,
+      title={LAPAR: Linearly-Assembled Pixel-Adaptive Regression Network for Single Image Super-resolution and Beyond},
+      author={Li, Wenbo and Zhou, Kun and Qi, Lu and Jiang, Nianjuan and Lu, Jiangbo and Jia, Jiaya},
+      journal={Advances in Neural Information Processing Systems},
+      volume={33},
       year={2020}
     }
     @article{li2021best,
