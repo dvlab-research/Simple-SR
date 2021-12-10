@@ -8,14 +8,15 @@ The training code of LAPAR (9 models) is now released.
 ---
 ### Paper 
 
-#### Best-Buddy GANs for Highly Detailed Image Super-Resolution
-[\[High quality version\]](https://drive.google.com/file/d/14vt57mSERR8cx62e7aNCkuxlKOCUP53H/view?usp=sharing)  [\[arXiv\]](https://arxiv.org/abs/2103.15295)
-
 #### MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution (ECCV 2020)
 [\[ECCV\]](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550341.pdf)   [\[arXiv\]](https://arxiv.org/abs/2007.1180)
 
 #### LAPAR: Linearly-Assembled Pixel-Adaptive Regression Network for Single Image Super-resolution and Beyond (NeurIPS 2020)
 [\[NeurIPS\]](https://papers.nips.cc/paper/2020/file/eaae339c4d89fc102edd9dbdb6a28915-Paper.pdf)  [\[arXiv\]](https://arxiv.org/abs/2105.10422)
+
+#### Best-Buddy GANs for Highly Detailed Image Super-Resolution (AAAI2022)
+[\[arXiv\]](https://arxiv.org/abs/2103.15295)
+
 
 Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.com/drive/folders/1pSFX6kV81slv2vGkboZjewZwQsLkFesU).
 
