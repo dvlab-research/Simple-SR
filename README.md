@@ -51,8 +51,17 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
         | LAPAR_C_x2.pth | LAPAR_C_x3.pth | LAPAR_C_x4.pth |
 
 4. Quick test
+    
+    You have to define the ``output_path'' or ``gt_path'' or ``both''. If ``output_path'' is given, outputs will be saved. If ``gt_path'' is given, PSNR/SSIM will be calculated.
+    
+    - For SISR,
     ```shell
-    python3 test_sample.py --sr_type SISR/VSR --model_path /model/path --input_path ./demo/LR_imgs --output_path ./demo/output --gt_path ./demo/HR_imgs
+    python3 test_sample.py --sr_type SISR --model_path /model/path --input_path ./demo/SISR/LR_imgs --output_path ./demo/SISR/output --gt_path ./demo/SISR/HR_imgs
+    ```
+
+    - For VSR,
+    ```shell
+    python3 test_sample.py --sr_type VSR --model_path /model/path --input_path ./demo/VSR/LR_imgs --output_path ./demo/VSR/output --gt_path ./demo/VSR/HR_imgs
     ```
 
 #### Prepare Data
