@@ -55,7 +55,7 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
 
 4. Quick test
     
-    You have to define the 'output_path' or 'gt_path' or 'both'. If 'output_path' is given, outputs will be saved. If 'gt_path' is given, PSNR/SSIM will be calculated. If you want to calculate LPIPS results, please install lpips library at [Here](https://github.com/richzhang/PerceptualSimilarity).
+    You have to define the output_path or gt_path or both. If output_path is given, outputs will be saved. If gt_path is given, PSNR/SSIM will be calculated. If you want to calculate LPIPS results, please install [lpips](https://github.com/richzhang/PerceptualSimilarity) library.
     
     - For SISR,
     ```shell
