@@ -4,6 +4,7 @@ The repository includes MuCAN, LAPAR, Beby-GAN and etc. It is designed for simpl
 ---
 ### Update
 The well-trained BebyGAN model and implemented BBL loss (see BBL.py in utils) are now released. We will make all visual examples available soon.
+
 The training code of LAPAR (9 models) is now released.
 
 ---
