@@ -3,6 +3,7 @@ The repository includes MuCAN, LAPAR, Beby-GAN and etc. It is designed for simpl
 
 ---
 ### Update
+The well-trained BebyGAN model and implemented BBL loss (see BBL.py in utils) are now released. We will make all visual examples available soon.
 The training code of LAPAR (9 models) is now released.
 
 ---
@@ -49,10 +50,12 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
         | LAPAR_A_x2.pth | LAPAR_A_x3.pth | LAPAR_A_x4.pth |
         | LAPAR_B_x2.pth | LAPAR_B_x3.pth | LAPAR_B_x4.pth |
         | LAPAR_C_x2.pth | LAPAR_C_x3.pth | LAPAR_C_x4.pth |
+    - BebyGAN
+        - BebyGAN_x4.pth: trained on DIV2K+Flickr2K datasets, x4 scale
 
 4. Quick test
     
-    You have to define the ``output_path'' or ``gt_path'' or ``both''. If ``output_path'' is given, outputs will be saved. If ``gt_path'' is given, PSNR/SSIM will be calculated.
+    You have to define the 'output_path' or 'gt_path' or 'both'. If 'output_path' is given, outputs will be saved. If 'gt_path' is given, PSNR/SSIM will be calculated. If you want to calculate LPIPS results, please install lpips library at [Here](https://github.com/richzhang/PerceptualSimilarity).
     
     - For SISR,
     ```shell

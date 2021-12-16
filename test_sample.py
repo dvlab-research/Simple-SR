@@ -44,9 +44,9 @@ def get_network(model_path):
     elif 'LAPAR_C_x4' in model_path:
         from exps.LAPAR_C_x4.config import config
         from exps.LAPAR_C_x4.network import Network
-    elif 'BebyGANs_x4' in model_path:
-        from exps.BebyGANs.config import config
-        from exps.BebyGANs.network import Network
+    elif 'BebyGAN_x4' in model_path:
+        from exps.BebyGAN.config import config
+        from exps.BebyGAN.network import Network
     else:
         print('Illenal model: not implemented!')
         sys.exit(1)
