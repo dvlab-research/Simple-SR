@@ -18,7 +18,7 @@ The training code of LAPAR (9 models) is now released.
 #### LAPAR: Linearly-Assembled Pixel-Adaptive Regression Network for Single Image Super-resolution and Beyond (NeurIPS 2020)
 [\[NeurIPS\]](https://papers.nips.cc/paper/2020/file/eaae339c4d89fc102edd9dbdb6a28915-Paper.pdf)  [\[arXiv\]](https://arxiv.org/abs/2105.10422)
 
-#### Best-Buddy GANs for Highly Detailed Image Super-Resolution (AAAI2022)
+#### Best-Buddy GANs for Highly Detailed Image Super-Resolution
 [\[arXiv\]](https://arxiv.org/abs/2103.15295)
 
 
