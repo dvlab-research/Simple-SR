@@ -52,7 +52,7 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
         | LAPAR_B_x2.pth | LAPAR_B_x3.pth | LAPAR_B_x4.pth |
         | LAPAR_C_x2.pth | LAPAR_C_x3.pth | LAPAR_C_x4.pth |
     - BebyGAN
-        - RRDB_warmpup.pth: for initialization 
+        - RRDB_warmup.pth: provided for initialization 
         - BebyGAN_x4.pth: trained on DIV2K+Flickr2K datasets, x4 scale
 
 4. Quick test
