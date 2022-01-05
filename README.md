@@ -93,7 +93,7 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
     cd exps/LAPAR_A_x2/
     bash train.sh $GPU_NUM $PORT
     ```
-    Please modify the path of initialization model of BebyGAN (found in [Google Drive](https://drive.google.com/drive/folders/1c-KUEPJl7pHs9btqHYoUJkcMPKViObgJ?usp=sharing) in config.py before training.
+    Please modify the path of initialization model of BebyGAN (found in [Google Drive](https://drive.google.com/drive/folders/1c-KUEPJl7pHs9btqHYoUJkcMPKViObgJ?usp=sharing)) in config.py before training.
 
     Notice that you can find the checkpoints, log files and visualization images in either .exps/LAPAR\_A\_x2/log/ (a soft link) or .logs/LAPAR\_A\_x2/.
 
