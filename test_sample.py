@@ -55,6 +55,9 @@ def get_network(model_path):
     if 'KERNEL_PATH' in config.MODEL:
         config.MODEL.KERNEL_PATH = config.MODEL.KERNEL_PATH.replace('../', '')
 
+    if 'BebyGAN' in model_path:
+        return config, Network(config).G
+
     return config, Network(config)
 
 

@@ -24,6 +24,30 @@ def make_optimizer(config, model, num_gpu=None):
     return optimizer
 
 
+def make_optimizer_sep(model, base_lr, type='Adam', beta1=0.9, beta2=0.999, weight_decay=0, momentum=0, num_gpu=None):
+    if num_gpu is None:
+        lr = base_lr
+    else:
+        lr = base_lr * num_gpu
+
+    if type == 'Adam':
+        optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()),
+                               lr=lr, betas=(beta1, beta2), eps=1e-8, weight_decay=weight_decay)
+    elif type == 'SGD':
+        optimizer = optim.SGD(filter(lambda p: p.requires_grad, model.parameters()),
+                              lr=lr, momentum=momentum, weight_decay=weight_decay)
+    elif type == 'AdamW':
+        optimizer = optim.AdamW(filter(lambda p: p.requires_grad, model.parameters()),
+                               lr=lr, betas=(beta1, beta2), eps=1e-8, weight_decay=0.01)
+    elif type == 'Adamax':
+        optimizer = optim.Adamax(filter(lambda p: p.requires_grad, model.parameters()),
+                               lr=lr, betas=(beta1, beta2), eps=1e-8, weight_decay=weight_decay)
+    else:
+        raise ValueError('Illegal optimizer.')
+
+    return optimizer
+
+
 def make_lr_scheduler(config, optimizer):
     w_iter = config.SOLVER.WARM_UP_ITER
     w_fac = config.SOLVER.WARM_UP_FACTOR
@@ -43,7 +67,7 @@ class CosineAnnealingLR_warmup(_LRScheduler):
         self.w_iter = config.SOLVER.WARM_UP_ITER
         self.w_fac = config.SOLVER.WARM_UP_FACTOR
         self.T_period = config.SOLVER.T_PERIOD
-        self.last_restart = 0 
+        self.last_restart = 0
         self.T_max = self.T_period[0]
         assert config.SOLVER.MAX_ITER == self.T_period[-1], 'Illegal training period setting.'
         super(CosineAnnealingLR_warmup, self).__init__(optimizer, last_epoch=last_epoch)

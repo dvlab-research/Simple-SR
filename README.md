@@ -3,11 +3,9 @@ The repository includes MuCAN, LAPAR, Beby-GAN and etc. It is designed for simpl
 
 ---
 ### Update
-The well-trained BebyGAN model and implemented BBL loss (see BBL.py in utils) are now released.
+The training code of BebyGAN and LAPAR is released.
 
-All visual examples (including BebyGAN and other SOTAs) are available [here](https://drive.google.com/drive/folders/1t9GPQ61MDLOkgk-Lvez3jntciC-ZBYNS?usp=sharing).
-
-The training code of LAPAR (9 models) is now released.
+The well-trained models and all visual examples (including BebyGAN and other SOTAs) are available [here](https://drive.google.com/drive/folders/1t9GPQ61MDLOkgk-Lvez3jntciC-ZBYNS?usp=sharing).
 
 ---
 ### Paper 
@@ -54,6 +52,7 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
         | LAPAR_B_x2.pth | LAPAR_B_x3.pth | LAPAR_B_x4.pth |
         | LAPAR_C_x2.pth | LAPAR_C_x3.pth | LAPAR_C_x4.pth |
     - BebyGAN
+        - RRDB_warmpup.pth: for initialization 
         - BebyGAN_x4.pth: trained on DIV2K+Flickr2K datasets, x4 scale
 
 4. Quick test
@@ -94,6 +93,8 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
     cd exps/LAPAR_A_x2/
     bash train.sh $GPU_NUM $PORT
     ```
+    Please modify the path of initialization model of BebyGAN (found in [Google Drive](https://drive.google.com/drive/folders/1c-KUEPJl7pHs9btqHYoUJkcMPKViObgJ?usp=sharing) in config.py before training.
+
     Notice that you can find the checkpoints, log files and visualization images in either .exps/LAPAR\_A\_x2/log/ (a soft link) or .logs/LAPAR\_A\_x2/.
 
 #### Test
