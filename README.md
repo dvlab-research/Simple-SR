@@ -30,7 +30,7 @@ Please find supplementary files of MuCAN and LAPAR [here](https://drive.google.c
     git clone https://github.com/Jia-Research-Lab/Simple-SR.git
     ```
 2. Install the dependencies
-    - Python >= 3.5
+    - Python >= 3.6
     - PyTorch >= 1.2
     - spatial-correlation-sampler
     ```shell
